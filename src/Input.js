@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from 'prop-types';
 
 function Input({ addPost }) {
   const [input, setInput] = useState("");
@@ -28,5 +29,6 @@ function Input({ addPost }) {
     </div>
   );
 }
+
 
 export default Input;

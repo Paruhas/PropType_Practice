@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 function Post({ id, title, removePost }) {
   return (
@@ -13,6 +14,12 @@ function Post({ id, title, removePost }) {
       />
     </div>
   );
+}
+
+Post.propTypes = {
+  id : PropTypes.number,
+  title : PropTypes.string,
+  removePost : PropTypes.func,
 }
 
 export default Post;
